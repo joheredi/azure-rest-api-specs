@@ -53,7 +53,7 @@
           "200": {
             "description": "Successful operation.",
             "schema": {
-              "$ref": "#/definitions/EntireDetectResponse"
+              "$ref": "#/definitions/DetectEntireResponse"
             }
           },
           "default": {
@@ -96,7 +96,7 @@
           "200": {
             "description": "Successful operation.",
             "schema": {
-              "$ref": "#/definitions/LastDetectResponse"
+              "$ref": "#/definitions/DetectLastPointResponse"
             }
           },
           "default": {
@@ -125,7 +125,7 @@
             "description": "Time series points and granularity is needed. Advanced model parameters can also be set in the request if needed.",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/ChangePointDetectRequest"
+              "$ref": "#/definitions/DetectChangePointRequest"
             }
           }
         ],
@@ -139,7 +139,7 @@
           "200": {
             "description": "Successful operation.",
             "schema": {
-              "$ref": "#/definitions/ChangePointDetectResponse"
+              "$ref": "#/definitions/DetectChangePointResponse"
             }
           },
           "default": {
@@ -292,7 +292,7 @@
         }
       }
     },
-    "EntireDetectResponse": {
+    "DetectEntireResponse": {
       "type": "object",
       "required": [
         "expectedValues",
@@ -362,7 +362,7 @@
         }
       }
     },
-    "LastDetectResponse": {
+    "DetectLastPointResponse": {
       "type": "object",
       "required": [
         "expectedValue",
@@ -414,7 +414,7 @@
         }
       }
     },
-    "ChangePointDetectRequest": {
+    "DetectChangePointRequest": {
       "type": "object",
       "required": [
         "granularity",
@@ -453,7 +453,7 @@
         }
       }
     },
-    "ChangePointDetectResponse": {
+    "DetectChangePointResponse": {
       "type": "object",
       "required": [
         "isChangePoint",
